@@ -53,21 +53,75 @@ ACTION:
 ASSERT:
   - TextVisible: "Invalid credentials"
 
-📚 Roadmap
+## 📚 Roadmap — Project Evolution Plan
 
- Create folder structure
+### **Phase 1 — Repository Setup**
+- [x] Create public repository
+- [x] Add initial README
+- [ ] Add project folder structure
+- [ ] Add basic documentation files (`/docs`)
 
- Add DSL examples (UI + API + hardware)
+---
 
- Add a simple parser
+### **Phase 2 — DSL Layer**
+- [ ] Define DSL structure (YAML/JSON)
+- [ ] Create basic DSL schema (UI + API + hardware)
+- [ ] Build DSL → JSON normalization logic
+- [ ] Add example DSL files in `/dsl/examples`
+- [ ] Define deterministic rules for DSL validation
 
- Add deterministic validation rules
+---
 
- Add Playwright (TypeScript) examples
+### **Phase 3 — Playwright + TypeScript Layer**
+- [ ] Initialize Playwright with TypeScript (`npx playwright init`)
+- [ ] Create `/playwright-ts` folder
+- [ ] Add basic UI tests (login, navigation)
+- [ ] Add reusable helpers (selectors, waits, MudBlazor helpers)
+- [ ] Add config-driven test execution (JSON/YAML input)
 
- Add architecture diagrams
+---
 
- Add documentation (GitHub Pages)
+### **Phase 4 — Python AI/ML Layer**
+- [ ] Setup `/python-ai` folder with virtual environment
+- [ ] Add simple NLP → DSL transformation (e.g. GPT or local model)
+- [ ] Map natural language → structured DSL
+- [ ] Add AI-assisted test suggestions
+- [ ] Add small model for semantic analysis (future use with ExecuTorch)
+
+---
+
+### **Phase 5 — Deterministic Core**
+- [ ] Create `/core` module (language-agnostic)
+- [ ] Implement coherence/validation rules
+- [ ] Implement deterministic execution plan generator
+- [ ] Integrate core with DSL + Playwright layers
+- [ ] Add error-checking and consistency rules
+
+---
+
+### **Phase 6 — Integration Layer**
+- [ ] Python AI → DSL → TypeScript execution pipeline
+- [ ] Shared `/config` folder for JSON/YAML
+- [ ] Logging and reporting structure
+- [ ] CLI for triggering tests
+
+---
+
+### **Phase 7 — Documentation**
+- [ ] Create `/docs` folder
+- [ ] Add architecture diagrams (PlantUML or Mermaid)
+- [ ] Add design philosophy
+- [ ] Add examples of DSL + AI + Playwright working together
+- [ ] Publish GitHub Pages documentation site
+
+---
+
+### **Phase 8 — Long-Term Evolution**
+- [ ] Local AI model integration (ExecuTorch / ONNX / GGUF)
+- [ ] Model-driven self-healing prototype
+- [ ] Deterministic–probabilistic hybrid engine
+- [ ] Hardware testing integration (LabVIEW/TestStand bridge)
+
 
 🧭 Purpose
 
